@@ -55,9 +55,9 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h1 class="display-4">
-            Selamat Datang<br>di<br><span>APOTEK SYUKUR</span>
+            Selamat Datang
         </h1>
-        <hr>
+        
     </div>
 </div>
 <!-- Akhir Jumbotron -->
@@ -66,5 +66,27 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="asset/js/jquery-3.3.1.js"></script>
 <script src="asset/js/bootstrap.min.js"></script>
+<script src="asset/js/typed.js"></script>
+<script>
+let welcome = ['Selamat Datang',
+                '<br>Di',
+                '<br><br><span>APOTEK SYUKUR</span>',
+                'Selamat Datang<br>Di<br><span>APOTEK SYUKUR</span><hr>'
+            ];
+let typed = new Typed('.display-4', {
+    strings: welcome,
+    startDelay: 1500,
+    backSpeed:110,
+    fadeOut: true,
+    fadeOutDelay: false,
+    typeSpeed: 50,
+    loop: true,
+    loopCount: 2,
+    showCursor: false,
+
+});
+
+</script>
+
 </body>
 </html>
