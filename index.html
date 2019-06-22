@@ -40,9 +40,8 @@
                         LAINNYA <span class="dropdown-toggle"></span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">TENTANG KAMI</a>
+                        <a class="dropdown-item" href="#">MASUK</a>
                     </div>
                 </li>
             </ul>
@@ -68,25 +67,29 @@
 <script src="asset/js/bootstrap.min.js"></script>
 <script src="asset/js/typed.js"></script>
 <script>
+
 let welcome = ['Selamat Datang',
                 '<br>Di',
                 '<br><br><span>APOTEK SYUKUR</span>',
                 'Selamat Datang<br>Di<br><span>APOTEK SYUKUR</span><hr>'
             ];
-let typed = new Typed('.display-4', {
-    strings: welcome,
-    startDelay: 1500,
-    backSpeed:110,
-    fadeOut: true,
-    fadeOutDelay: false,
-    typeSpeed: 50,
-    loop: true,
-    loopCount: 2,
-    showCursor: false,
 
+window.addEventListener('load', function() {
+    let typed = new Typed('.display-4', {
+        strings: welcome,
+        startDelay: 1500,
+        backSpeed:110,
+        fadeOut: true,
+        fadeOutDelay: false,
+        typeSpeed: 50,
+        loop: true,
+        loopCount: 2,
+        showCursor: false
+    });
 });
-
+    
 </script>
+
 
 </body>
 </html>
