@@ -16,8 +16,7 @@ nav{
     background-size: cover;
     height: 650px;
     margin-top: 20px; 
-    position: relative;  
-     
+    position: relative;   
 }
 
 .jumbotron .display-4{
@@ -26,6 +25,14 @@ nav{
     margin-top: 150px;
     position: relative;
     z-index: 1;
+}
+
+.jumbotron .container .btn-danger{
+    color:white;
+    position:relative;
+    z-index:2;
+    text-align:center;
+    margin-top: 250px;
 }
 
 .jumbotron .display-4 span{
@@ -40,6 +47,7 @@ nav{
     position: relative;
     z-index: 1;
 }
+
 .jumbotron::after{
     content: '';
     display: block;

@@ -23,25 +23,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">BERANDA <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?p=beranda">BERANDA <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">GALERI</a>
+                    <a class="nav-link" href="index.php?p=galeri">GALERI</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">TESTIMONI</a>
+                    <a class="nav-link" href="index.php?p=testimoni">TESTIMONI</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">KONTAK KAMI</a>
+                    <a class="nav-link" href="index.php?p=kontak_kami">KONTAK KAMI</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         LAINNYA <span class="dropdown-toggle"></span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">TENTANG KAMI</a>
-                        <a class="dropdown-item" href="#">MASUK</a>
+                        <a class="dropdown-item" href="index.php?p=tentang_kami">TENTANG KAMI</a>
+                        <a class="dropdown-item" href="index.php?p=masuk">MASUK</a>
                     </div>
                 </li>
             </ul>
@@ -50,12 +50,37 @@
 </nav>
 <!-- Akhir Navbar -->
 
+
+
 <!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-4">
-            Selamat Datang
-        </h1>
+        <?php
+            
+            if(isset($_GET["p"])){
+                $p = $_GET["p"];
+                switch($p){
+                    case 'beranda':
+                        echo '<h1 class="display-4"></h1>';
+                        break;
+                    case 'galeri':
+                        include "galeri.php";
+                        break;
+                    case 'testimoni':
+                        include "testimoni.php";
+                        break;
+                    case 'kontak_kami':
+                        include "kontak_kami.php";
+                        break;
+                    default :
+                        echo '<h1 class="btn-danger">Halaman yang anda cari tidak ada !</h1>';
+                        break;
+
+                };
+            }else{
+                echo '<h1 class="display-4"></h1>';
+            }
+        ?>
     </div>
 </div>
 <!-- Akhir Jumbotron -->
@@ -76,7 +101,7 @@ let welcome = ['Selamat Datang',
 window.addEventListener('load', function() {
     let typed = new Typed('.display-4', {
         strings: welcome,
-        startDelay: 1500,
+        startDelay: 1000,
         backSpeed:110,
         fadeOut: true,
         fadeOutDelay: false,
@@ -88,7 +113,5 @@ window.addEventListener('load', function() {
 });
     
 </script>
-
-
 </body>
 </html>
