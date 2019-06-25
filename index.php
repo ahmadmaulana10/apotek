@@ -12,6 +12,26 @@
 <title>Apotek</title>
 </head>
 <body>
+<?php
+if(isset($_GET["p"])){
+    $page = $_GET["p"];
+    switch($page){
+        case "beranda":
+            $page = "beranda";
+            break;
+        case "ga":
+            $page = "ga";
+            break;
+        case "testimoni":
+            $page = "testimoni";
+            break;
+        case "kontak_kami":
+            $page = "kontak_kami";
+            break;
+    }
+    
+}
+?>
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
@@ -23,16 +43,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item  <?php if($page==="beranda" or $page == "") echo "active";?>">
                     <a class="nav-link" href="index.php?p=beranda">BERANDA <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?php if($page === "galeri") echo "active";?>">
                     <a class="nav-link" href="index.php?p=galeri">GALERI</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?php if($page === "testimoni") echo "active";?>">
                     <a class="nav-link" href="index.php?p=testimoni">TESTIMONI</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?php if($page === "kontak_kami") echo "active";?>">
                     <a class="nav-link" href="index.php?p=kontak_kami">KONTAK KAMI</a>
                 </li>
                 <li class="nav-item dropdown">

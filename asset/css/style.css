@@ -10,7 +10,6 @@ nav{
     border-bottom: 5px solid #3CC8B6;
 }
 
-
 .jumbotron{
     background: url(../img/bg.jpg);
     background-size: cover;
@@ -53,14 +52,24 @@ nav{
     position: relative;
     z-index: 1;
     width: 50%;
-    margin: 80px auto;
-    
+    margin: 80px auto;   
+}
+
+.jumbotron .container .form-group .form-control{
+    margin-bottom: -15px;
+}
+
+.jumbotron .container .form-group .form-control:focus{
+    box-shadow: none;
+    outline: #3CC8B6 solid 3px;
 }
 
 .jumbotron .container .form-group .form-control::-webkit-input-placeholder{
     color: #9F9F9F;
     font-weight: 500;
 }
+
+
 .jumbotron .container .form-group .btn{
     background-color: #3CC8B6;
     border-color: #3CC8B6;
