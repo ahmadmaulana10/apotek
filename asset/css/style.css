@@ -17,6 +17,7 @@ nav{
     height: 650px;
     margin-top: 20px; 
     position: relative;   
+    z-index: 0;
 }
 
 .jumbotron .display-4{
@@ -48,6 +49,33 @@ nav{
     z-index: 1;
 }
 
+.jumbotron .container .form-group{
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    margin: 80px auto;
+    
+}
+
+.jumbotron .container .form-group .form-control::-webkit-input-placeholder{
+    color: #9F9F9F;
+    font-weight: 500;
+}
+.jumbotron .container .form-group .btn{
+    background-color: #3CC8B6;
+    border-color: #3CC8B6;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.jumbotron .container .form-group .form-control{
+    font-weight: 500;
+
+}
+
+
+/* Layar Hitam */
 .jumbotron::after{
     content: '';
     display: block;
@@ -56,6 +84,7 @@ nav{
     height: 100%;
     position: absolute;
     bottom: 0;
+    z-index: 0;
 }
 
 /* UNTUK TAMPILAN MOBILE */
@@ -76,6 +105,10 @@ nav{
 
     .jumbotron .container hr{
         width: 80%;
+    }
+
+    .jumbotron .container .form-group{
+        width: 75%;
     }
 }
 

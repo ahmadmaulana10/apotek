@@ -15,7 +15,7 @@
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.php?p=beranda">
             <img src="asset/img/logo_apotek.png" width="75" height="75" alt="Logo Apotek">
             APOTEK SYUKUR</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,6 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <?php
-            
             if(isset($_GET["p"])){
                 $p = $_GET["p"];
                 switch($p){
@@ -75,7 +74,6 @@
                     default :
                         echo '<h1 class="btn-danger">Halaman yang anda cari tidak ada !</h1>';
                         break;
-
                 };
             }else{
                 echo '<h1 class="display-4"></h1>';
