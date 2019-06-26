@@ -13,8 +13,8 @@ nav{
 .jumbotron{
     background: url(../img/bg.jpg);
     background-size: cover;
+    margin-top: 25px; 
     height: 650px;
-    margin-top: 20px; 
     position: relative;   
     z-index: 0;
 }
@@ -75,12 +75,10 @@ nav{
     border-color: #3CC8B6;
     width: 100%;
     border-radius: 5px;
-
 }
 
 .jumbotron .container .form-group .form-control{
     font-weight: 500;
-
 }
 
 
@@ -96,8 +94,31 @@ nav{
     z-index: 0;
 }
 
+.jumbotron .container .bd-example{
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.jumbotron .container .card{
+    position: relative;
+    z-index: 1;
+    margin: 50px auto;
+}
+
 /* UNTUK TAMPILAN MOBILE */
 @media (max-width: 768px) {
+    html{
+        overflow: scroll;
+    }
+
+    .jumbotron{
+        background-size: contain;
+        width: 100%;
+        background-repeat: repeat;
+    }
+
     .navbar-brand, .navbar{
         font-size: 14px;
     }
@@ -119,12 +140,33 @@ nav{
     .jumbotron .container .form-group{
         width: 75%;
     }
+
+    .jumbotron .container .bd-example{
+        margin: 100px auto;
+        width: 100%;
+    }
+}
+
+
+/* UNTUK TAMPILAN TABLET */
+@media (min-width: 768px) {
+    html{
+        overflow: visible;
+    }
 }
 
 
 
-/* UNTUK TAMPILAN TABLET SAMPAI DESKTOP */
-@media (min-width: 768px) {
+/* UNTUK TAMPILAN DESKTOP */
+@media (min-width: 992px) {
+    html{
+        overflow: hidden;
+    }
+
+    .jumbotron{
+        margin-top: 50px;
+    }
+
     .navbar-brand, .navbar{
         font-size: 18px;
     }
