@@ -2,7 +2,6 @@
 font-family: Montserrat;
 src: url(../font/Montserrat-Regular.ttf);
 font-weight: normal;
-
 }
 
 html{
@@ -120,17 +119,7 @@ nav{
 }
 
 /* UNTUK TAMPILAN MOBILE */
-@media (max-width: 768px) {
-    /* html{
-        overflow: scroll;
-    } */
-
-    /* .jumbotron{
-        background-size: contain;
-        width: 100%;
-        background-repeat: repeat;
-    } */
-
+@media (max-width: 767px) {
     .navbar-brand, .navbar{
         font-size: 14px;
     }
@@ -162,6 +151,15 @@ nav{
         width: 60%;
         margin: 15px auto;
     }
+
+    .jumbotron .container .card .card-title{
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .jumbotron .container .card .card-footer{
+        font-size: 15px;
+    }
 }
 
 
@@ -173,6 +171,15 @@ nav{
 
     .jumbotron .container .card{
         margin: 0 5px;
+    }
+
+    .jumbotron .container .card .card-title{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .jumbotron .container .card .card-footer{
+        font-size: 11px;
     }
 }
 
@@ -209,6 +216,10 @@ nav{
 
     .jumbotron .container .card{
         margin: 0 5px;
+    }
+
+    .jumbotron .container .card .card-footer{
+        font-size: 15px;
     }
 
 }

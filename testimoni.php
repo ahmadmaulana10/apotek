@@ -1,5 +1,5 @@
 <div class="row mt-5">
-    <div class="col-lg-12 col-md-offset-6">
+    <div class="col-lg-12 col-md-offset-4 col-sm-offset-12">
         <div class="card-deck mt-5">
             <div class="card">
                 <img src="asset/img/testi_1.jpg" height="150" width="100" class="card-img-top" alt="...">
@@ -48,7 +48,7 @@
                     <p class="card-text">Terimakasih, <s>saya kasih bintang 3 dulu ya. kalo cocok saya kasih full</s> Obatnya kok pahit ya?</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">CEO Stark Industries</small>
+                    <small class="text-muted">Ibu Rumah Tangga</small>
                 </div>
             </div>
             <div class="card">
