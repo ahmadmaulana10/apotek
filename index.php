@@ -21,6 +21,7 @@ if(isset($_GET["p"])){
             break;
         case "testimoni":
             $page = "testimoni";
+            echo '<link rel="stylesheet" href="asset/css/testimoni.css">';
             break;
         case "kontak_kami":
             $page = "kontak_kami";

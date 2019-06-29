@@ -5,13 +5,12 @@ font-weight: normal;
 
 }
 
-
 html{
     overflow: hidden;
 }
 
 body{
-    font-family: Montserrat, Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Montserrat, 'Segoe UI', Geneva, Verdana, sans-serif;
 }
 
 nav{
@@ -122,15 +121,15 @@ nav{
 
 /* UNTUK TAMPILAN MOBILE */
 @media (max-width: 768px) {
-    html{
+    /* html{
         overflow: scroll;
-    }
+    } */
 
-    .jumbotron{
+    /* .jumbotron{
         background-size: contain;
         width: 100%;
         background-repeat: repeat;
-    }
+    } */
 
     .navbar-brand, .navbar{
         font-size: 14px;

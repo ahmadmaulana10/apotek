@@ -44,8 +44,8 @@
             <div class="card">
                 <img src="asset/img/testi_5.jpg" height="150" width="100" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Mas Toni</h5>
-                    <p class="card-text">Terimakasih, Avenger sangat terbantu, encok steve roger bisa sembuh.</p>
+                    <h5 class="card-title">Ibu Carol</h5>
+                    <p class="card-text">Terimakasih, <s>saya kasih bintang 3 dulu ya. kalo cocok saya kasih full</s> Obatnya kok pahit ya?</p>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">CEO Stark Industries</small>
@@ -55,7 +55,7 @@
                 <img src="asset/img/testi_6.jpg" height="150" width="100" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Neng Dea</h5>
-                    <p class="card-text">Bisul aku sembuh, beli obat disini, terimakasih tong-fang !</p>
+                    <p class="card-text">Bisul aku sembuh, beli obat disini, terimakasih <s>tong-fang</s> Apotek Syukur !</p>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">Mahasiswi</small>
