@@ -1,12 +1,21 @@
+@font-face{
+font-family: Montserrat;
+src: url(../font/Montserrat-Regular.ttf);
+font-weight: normal;
+
+}
+
+
 html{
     overflow: hidden;
 }
 
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Montserrat, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav{
+    font-family: Montserrat;
     border-bottom: 5px solid #3CC8B6;
 }
 
@@ -104,7 +113,11 @@ nav{
 .jumbotron .container .card{
     position: relative;
     z-index: 1;
-    margin: 50px auto;
+    margin: auto;
+}
+
+.jumbotron .container .card p{
+    font-size: 12px;
 }
 
 /* UNTUK TAMPILAN MOBILE */
@@ -145,6 +158,11 @@ nav{
         margin: 100px auto;
         width: 100%;
     }
+
+    .jumbotron .container .card{
+        width: 60%;
+        margin: 15px auto;
+    }
 }
 
 
@@ -152,6 +170,10 @@ nav{
 @media (min-width: 768px) {
     html{
         overflow: visible;
+    }
+
+    .jumbotron .container .card{
+        margin: 0 5px;
     }
 }
 
@@ -184,6 +206,10 @@ nav{
         margin: auto;
         padding-bottom: 5px;
         margin-bottom: -10px;
+    }
+
+    .jumbotron .container .card{
+        margin: 0 5px;
     }
 
 }

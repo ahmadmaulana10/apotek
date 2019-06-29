@@ -6,12 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="asset/css/bootstrap.min.css">
+<link rel="stylesheet" href="asset/css/bootstrap.css">
 <link rel="stylesheet" href="asset/css/style.css">
 
-<title>Apotek</title>
-</head>
-<body>
 <?php
 if(isset($_GET["p"])){
     $page = $_GET["p"];
@@ -19,8 +16,8 @@ if(isset($_GET["p"])){
         case "beranda":
             $page = "beranda";
             break;
-        case "ga":
-            $page = "ga";
+        case "galeri":
+            $page = "galeri";
             break;
         case "testimoni":
             $page = "testimoni";
@@ -29,21 +26,25 @@ if(isset($_GET["p"])){
             $page = "kontak_kami";
             break;
     }
-    
 }
 ?>
+<title>Apotek</title>
+</head>
+<body>
+
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="index.php?p=beranda">
             <img src="asset/img/logo_apotek.png" width="75" height="75" alt="Logo Apotek">
-            APOTEK SYUKUR</a>
+            <span style="font-weight:bold">APOTEK SYUKUR</span>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item  <?php if($page==="beranda" or $page == "") echo "active";?>">
+                <li class="nav-item <?php if($page==="beranda" or $page == "") echo "active";?>">
                     <a class="nav-link" href="index.php?p=beranda">BERANDA <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item <?php if($page === "galeri") echo "active";?>">
@@ -91,8 +92,8 @@ if(isset($_GET["p"])){
                     case 'kontak_kami':
                         include "kontak_kami.php";
                         break;
-                    default :
-                        echo '<h1 class="btn-danger">Halaman yang anda cari tidak ada !</h1>';
+                    default:
+                        echo '<h1 class="btn-danger m-5">Halaman yang anda cari tidak ada !</h1>';
                         break;
                 };
             }else{
