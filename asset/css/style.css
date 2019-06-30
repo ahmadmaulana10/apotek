@@ -1,7 +1,7 @@
 @font-face{
-font-family: Montserrat;
-src: url(../font/Montserrat-Regular.ttf);
-font-weight: normal;
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Regular.ttf);
+    font-weight: normal;
 }
 
 html{
@@ -105,7 +105,7 @@ nav{
     position: relative;
     z-index: 1;
     width: 50%;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 .jumbotron .container .card{
@@ -160,6 +160,11 @@ nav{
     .jumbotron .container .card .card-footer{
         font-size: 15px;
     }
+
+    .jumbotron .container .bd-example .carousel-inner .carousel-item img{
+        padding-bottom: 100px;
+        height: 350px;
+    }
 }
 
 
@@ -180,6 +185,15 @@ nav{
 
     .jumbotron .container .card .card-footer{
         font-size: 11px;
+    }
+
+    .jumbotron .container .bd-example .carousel-inner p{
+        font-size: 10px;
+    }
+    
+    .jumbotron .container .bd-example .carousel-inner .carousel-item img{
+        padding-bottom: 150px;
+        width: 100%;
     }
 }
 
@@ -220,6 +234,15 @@ nav{
 
     .jumbotron .container .card .card-footer{
         font-size: 15px;
+    }
+
+    .jumbotron .container .bd-example .carousel-inner p{
+        font-size: 16px;
+    }
+
+    .jumbotron .container .bd-example .carousel-inner .carousel-item img{
+        padding-bottom: 150px;
+        width: 100px;
     }
 
 }
