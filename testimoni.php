@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="asset/img/testi_5.jpg" height="150" width="100" class="card-img-top" alt="...">
+                <img src="asset/img/testi_12.png" height="150" width="100" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Ibu Carol</h5>
                     <p class="card-text">Terimakasih, <s>saya kasih bintang 3 dulu ya. kalo cocok saya kasih full</s> Obatnya kok pahit ya?</p>

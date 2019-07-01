@@ -6,9 +6,11 @@
 
 html{
     overflow: hidden;
+    position: relative;
 }
 
 body{
+    margin-bottom: 10px;
     font-family: Montserrat, 'Segoe UI', Geneva, Verdana, sans-serif;
 }
 
@@ -48,7 +50,7 @@ nav{
 
 .jumbotron .container hr{
     background-color: white;
-    width: 40%;
+    width: 50%;
     height: 3px;
     border-radius: 10px;
     position: relative;
@@ -59,7 +61,7 @@ nav{
     position: relative;
     z-index: 1;
     width: 50%;
-    margin: 80px auto;   
+    margin: 50px auto;   
 }
 
 .jumbotron .container .form-group .form-control{
@@ -118,6 +120,30 @@ nav{
     font-size: 12px;
 }
 
+
+.jumbotron .container .row .col-md-offset-6{
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.jumbotron .container .row .col-md-offset-6 .form-group{
+    width: 80%;
+}
+
+
+.jumbotron .container .row .col-lg-offset-6{
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.jumbotron .container .row .col-lg-offset-6 .form-group{
+    width: 80%;
+}
+
 /* UNTUK TAMPILAN MOBILE */
 @media (max-width: 767px) {
     .navbar-brand, .navbar{
@@ -162,18 +188,15 @@ nav{
     }
 
     .jumbotron .container .bd-example .carousel-inner .carousel-item img{
-        padding-bottom: 100px;
+        padding-bottom: 150px;
         height: 350px;
     }
 }
+/* --UNTUK TAMPILAN MOBILE */
 
 
 /* UNTUK TAMPILAN TABLET */
 @media (min-width: 768px) {
-    html{
-        overflow: visible;
-    }
-
     .jumbotron .container .card{
         margin: 0 5px;
     }
@@ -188,23 +211,20 @@ nav{
     }
 
     .jumbotron .container .bd-example .carousel-inner p{
-        font-size: 10px;
+        font-size: 16px;
     }
     
     .jumbotron .container .bd-example .carousel-inner .carousel-item img{
         padding-bottom: 150px;
-        width: 100%;
+        height: 350px;
     }
 }
+/* --UNTUK TAMPILAN TABLET */
 
 
 
 /* UNTUK TAMPILAN DESKTOP */
 @media (min-width: 992px) {
-    html{
-        overflow: hidden;
-    }
-
     .jumbotron{
         margin-top: 50px;
     }
@@ -237,12 +257,11 @@ nav{
     }
 
     .jumbotron .container .bd-example .carousel-inner p{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .jumbotron .container .bd-example .carousel-inner .carousel-item img{
         padding-bottom: 150px;
-        width: 100px;
+        height: 350px;
     }
-
 }

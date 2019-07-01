@@ -26,6 +26,12 @@ if(isset($_GET["p"])){
         case "kontak_kami":
             $page = "kontak_kami";
             break;
+        case "masuk":
+            $page = "masuk";
+            break;
+        case "tentang_kami":
+            $page = "tentang_kami";
+            break;
     }
 }
 ?>
@@ -62,8 +68,8 @@ if(isset($_GET["p"])){
                         LAINNYA <span class="dropdown-toggle"></span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="index.php?p=tentang_kami">TENTANG KAMI</a>
-                        <a class="dropdown-item" href="index.php?p=masuk">MASUK</a>
+                        <a class="dropdown-item <?php if($page === "tentang_kami") echo "disabled";?>" href="index.php?p=tentang_kami">TENTANG KAMI</a>
+                        <a class="dropdown-item <?php if($page === "masuk") echo "disabled";?>" href="index.php?p=masuk">MASUK</a>
                     </div>
                 </li>
             </ul>
@@ -82,6 +88,7 @@ if(isset($_GET["p"])){
                 $p = $_GET["p"];
                 switch($p){
                     case 'beranda':
+                        $p = "beranda";
                         echo '<h1 class="display-4"></h1>';
                         break;
                     case 'galeri':
@@ -93,11 +100,18 @@ if(isset($_GET["p"])){
                     case 'kontak_kami':
                         include "kontak_kami.php";
                         break;
+                    case 'tentang_kami':
+                        include "tentang_kami.php";
+                        break;
+                    case 'masuk':
+                        include "masuk.php";
+                        break;
                     default:
                         echo '<h1 class="btn-danger m-5">Halaman yang anda cari tidak ada !</h1>';
                         break;
                 };
             }else{
+                $p = "kosong";
                 echo '<h1 class="display-4"></h1>';
             }
         ?>
@@ -105,33 +119,14 @@ if(isset($_GET["p"])){
 </div>
 <!-- Akhir Jumbotron -->
 
-
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="asset/js/jquery-3.3.1.js"></script>
 <script src="asset/js/bootstrap.min.js"></script>
 <script src="asset/js/typed.js"></script>
 <script>
-
-let welcome = ['Selamat Datang',
-                '<br>Di',
-                '<br><br><span>APOTEK SYUKUR</span>',
-                'Selamat Datang<br>Di<br><span>APOTEK SYUKUR</span><hr>'
-            ];
-
-window.addEventListener('load', function() {
-    let typed = new Typed('.display-4', {
-        strings: welcome,
-        startDelay: 1000,
-        backSpeed:110,
-        fadeOut: true,
-        fadeOutDelay: false,
-        typeSpeed: 50,
-        loop: true,
-        loopCount: 2,
-        showCursor: false
-    });
-});
-    
+<?php
+if($p == "beranda" OR $p == "kosong") include "pesan_beranda.js";
+?>
 </script>
 </body>
 </html>
