@@ -144,6 +144,10 @@ nav{
     width: 80%;
 }
 
+.jumbotron .container .row .col-lg-offset-6 .card .card-text{
+    font-size: 16px;
+}   
+
 /* UNTUK TAMPILAN MOBILE */
 @media (max-width: 767px) {
     .navbar-brand, .navbar{
@@ -191,6 +195,14 @@ nav{
         padding-bottom: 150px;
         height: 350px;
     }
+
+    .jumbotron .container .row .col-lg-offset-6{
+        margin-top: 50px;
+    }
+
+    .jumbotron .container .row .col-lg-offset-6 .card .card-text{
+        font-size: 12px;
+    }
 }
 /* --UNTUK TAMPILAN MOBILE */
 
@@ -217,6 +229,10 @@ nav{
     .jumbotron .container .bd-example .carousel-inner .carousel-item img{
         padding-bottom: 150px;
         height: 350px;
+    }
+
+    .jumbotron .container .row .col-lg-offset-6{
+        margin-top: 50px;
     }
 }
 /* --UNTUK TAMPILAN TABLET */
