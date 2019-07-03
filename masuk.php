@@ -6,8 +6,11 @@ if(isset($_GET["daftar"])){
 <div class="row">
     <div class="col-lg-offset-6 mx-auto">
         <div class="card">
-            <div class="card-body">
-                <div class="form-group">
+            <div class="card-header text-center">
+                Daftar
+            </div>
+            <div class="card-body" style="height:300px">
+                <div class="form-group mt-1">
                     <form action="" method="POST">
                         <input type="text" name="pengguna" class="form-control" placeholder="Nama Pengguna" autocomplete="off"><br>
                         <input type="email" name="email" class="form-control" placeholder="Email" autocomplete="off"><br>
@@ -33,8 +36,11 @@ if(isset($_GET["daftar"])){
 <div class="row">
     <div class="col-lg-offset-6 mx-auto">
         <div class="card">
+            <div class="card-header text-center">
+                Lupa Kata Sandi
+            </div>
             <div class="card-body">
-                <div class="form-group">
+                <div class="form-group mt-5">
                     <form action="" method="POST">
                         <input type="email" name="email" class="form-control" placeholder="Email" autocomplete="off"><br>
                         <input type="password" name="pass1" class="form-control" placeholder="Kata Sandi Baru" autocomplete="off"><br>
@@ -60,8 +66,11 @@ if(isset($_GET["daftar"])){
 <div class="row">
     <div class="col-lg-offset-6 mx-auto">
         <div class="card">
+            <div class="card-header text-center">
+                Masuk
+            </div>
             <div class="card-body">
-                <div class="form-group">
+                <div class="form-group mt-5">
                     <form action="" method="POST">
                         <input type="text" name="pengguna" class="form-control" placeholder="Nama Pengguna" autocomplete="off"><br>
                         <input type="password" name="pass" class="form-control" placeholder="Kata Sandi" autocomplete="off"><br>

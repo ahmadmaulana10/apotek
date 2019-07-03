@@ -18,6 +18,7 @@ if(isset($_GET["p"])){
             break;
         case "galeri":
             $page = "galeri";
+            echo '<link rel="stylesheet" href="asset/css/galeri.css">';
             break;
         case "testimoni":
             $page = "testimoni";
@@ -31,6 +32,7 @@ if(isset($_GET["p"])){
             break;
         case "tentang_kami":
             $page = "tentang_kami";
+            echo '<link rel="stylesheet" href="asset/css/tentang_kami.css">';
             break;
     }
 }

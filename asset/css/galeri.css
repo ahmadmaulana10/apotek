@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    html{
+        overflow: scroll;
+        background: url(../img/bg.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    .jumbotron::after{
+        content: '';
+        display: block;
+        background:rgba(0, 0, 0, 0.4);
+        position: fixed;
+    }
+}

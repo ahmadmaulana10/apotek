@@ -1,6 +1,6 @@
 <div class="row mt-5">
     <div class="col-lg-12 col-md-offset-4 col-sm-offset-12">
-        <div class="card-deck mt-5">
+        <div class="card-deck">
             <div class="card">
                 <img src="asset/img/testi_1.jpg" height="150" width="100" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -52,13 +52,13 @@
                 </div>
             </div>
             <div class="card">
-                <img src="asset/img/testi_6.jpg" height="150" width="100" class="card-img-top" alt="...">
+                <img src="asset/img/testi_10.png" height="150" width="100" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Neng Dea</h5>
+                    <h5 class="card-title">Om Toni</h5>
                     <p class="card-text">Bisul aku sembuh, beli obat disini, terimakasih <s>tong-fang</s> Apotek Syukur !</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Mahasiswi</small>
+                    <small class="text-muted">Stark Industries</small>
                 </div>
             </div>
         </div>
