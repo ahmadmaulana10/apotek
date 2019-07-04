@@ -25,7 +25,7 @@
                 <img src="asset/img/testi_3.jpg" height="150" width="100" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Mang Gaben</h5>
-                    <p class="card-text">Kolesterolku turun setelah konsultasi dengan dokter disini !</p>
+                    <p class="card-text">Kolesterol saya turun setelah beli obat disini!</p>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">Miliarder</small>

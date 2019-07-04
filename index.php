@@ -40,7 +40,7 @@ if(isset($_GET["p"])){
 <title>Apotek</title>
 </head>
 <body>
-
+    
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container">

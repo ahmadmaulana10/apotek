@@ -20,7 +20,7 @@ if(isset($_GET["daftar"])){
                             <input type="checkbox">
                             Tampilkan Kata Sandi
                         </label>
-                        <input type="submit" class="btn btn-success" name="submit" value="Kirim">
+                        <input type="submit" class="btn btn-success" name="submit" value="Daftar">
                     </form>
                 </div>
             </div>
@@ -49,7 +49,7 @@ if(isset($_GET["daftar"])){
                             <input type="checkbox">
                             Tampilkan Kata Sandi
                         </label>
-                        <input type="submit" class="btn btn-success" name="submit" value="Kirim">
+                        <input type="submit" class="btn btn-success" name="submit" value="Ubah Kata Sandi">
                     </form>
                 </div>
             </div>
@@ -78,7 +78,7 @@ if(isset($_GET["daftar"])){
                             <input type="checkbox">
                             Tampilkan Kata Sandi
                         </label>
-                        <input type="submit" class="btn btn-success" name="submit" value="Kirim">
+                        <input type="submit" class="btn btn-success" name="submit" value="Masuk">
                     </form>
                 </div>
                 <h6 class="text-center"><a href="index.php?p=masuk&daftar=false" class="alert-link">Lupa Kata Sandi</a></h6>
